@@ -1,0 +1,266 @@
+<html>
+<!--
+This web page shows an HTML table and we applied custom-css styles to freeze the top row and first two columns
+Reference: https://blogs.perficient.com/2021/01/18/freezing-row-and-column-in-html-table-using-css/
+-->
+<head>
+    <title>Freeze Top Row and first two columns</title>
+	<link rel="stylesheet" type="text/css" href="freeze-table.css" />
+</head>
+
+<body>
+<div class="div-table">
+<table class="freeze-table" width="900px"> 
+	<thead> 
+		<tr> 
+			<th style="min-width: 75px; width:75px;" class="col-id-no fixed-header">ID Number</th>
+			<th style="min-width: 100px; width:100px;" class="col-first-name fixed-header">First Name</th>
+			<th style="min-width: 100px; width:100px;" >Last Name</th>
+			<th style="min-width: 500px; width:300px;" >Address</th>
+			<th style="min-width: 200px; width:100px;" >Phone</th>
+			<th style="min-width: 90px; width:75px;" >DOB</th>
+			<th style="min-width: 300px; width:100px;" >Extra Column1</th>
+			<th style="min-width: 300px; width:100px;" >Extra Column2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td class="col-id-no" scope="row"> 432423</td> 
+		<td class="col-first-name" scope="row"> Aarav</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432424</td> 
+		<td class="col-first-name" scope="row"> Avirat</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432425</td> 
+		<td class="col-first-name" scope="row"> Smruti</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432426</td> 
+		<td class="col-first-name" scope="row"> Pushpa</td> 
+		<td> Patel </td>
+		<td> #6, State Bank of India Society, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432427</td> 
+		<td class="col-first-name" scope="row"> Utsav</td> 
+		<td> Patel </td>
+		<td> Tadwadi, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432428</td> 
+		<td class="col-first-name" scope="row"> Nishtha</td> 
+		<td> Patel </td>
+		<td> Tadwadi, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432429</td> 
+		<td class="col-first-name" scope="row"> Krunal</td> 
+		<td> Patel </td>
+		<td> #74-75, Sai Nagar Society, Adajan, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432430</td> 
+		<td class="col-first-name" scope="row"> Heeva</td> 
+		<td> Patel </td>
+		<td> #74-75, Sai Nagar Society, Adajan, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432423</td> 
+		<td class="col-first-name" scope="row"> Aarav</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432424</td> 
+		<td class="col-first-name" scope="row"> Avirat</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432425</td> 
+		<td class="col-first-name" scope="row"> Smruti</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432426</td> 
+		<td class="col-first-name" scope="row"> Pushpa</td> 
+		<td> Patel </td>
+		<td> #6, State Bank of India Society, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432427</td> 
+		<td class="col-first-name" scope="row"> Utsav</td> 
+		<td> Patel </td>
+		<td> Tadwadi, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432428</td> 
+		<td class="col-first-name" scope="row"> Nishtha</td> 
+		<td> Patel </td>
+		<td> Tadwadi, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432429</td> 
+		<td class="col-first-name" scope="row"> Krunal</td> 
+		<td> Patel </td>
+		<td> #74-75, Sai Nagar Society, Adajan, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432430</td> 
+		<td class="col-first-name" scope="row"> Heeva</td> 
+		<td> Patel </td>
+		<td> #74-75, Sai Nagar Society, Adajan, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<td class="col-id-no" scope="row"> 432423</td> 
+		<td class="col-first-name" scope="row"> Aarav</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432424</td> 
+		<td class="col-first-name" scope="row"> Avirat</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432425</td> 
+		<td class="col-first-name" scope="row"> Smruti</td> 
+		<td> Patel </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432426</td> 
+		<td class="col-first-name" scope="row"> Pushpa</td> 
+		<td> Patel </td>
+		<td> #6, State Bank of India Society, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432427</td> 
+		<td class="col-first-name" scope="row"> Utsav</td> 
+		<td> Patel </td>
+		<td> Tadwadi, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432428</td> 
+		<td class="col-first-name" scope="row"> Nishtha</td> 
+		<td> Patel </td>
+		<td> Tadwadi, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432429</td> 
+		<td class="col-first-name" scope="row"> Krunal</td> 
+		<td> Patel </td>
+		<td> #74-75, Sai Nagar Society, Adajan, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+		<tr>
+		<td class="col-id-no" scope="row"> 432430</td> 
+		<td class="col-first-name" scope="row"> Heeva</td> 
+		<td> Patel </td>
+		<td> #74-75, Sai Nagar Society, Adajan, Surat </td>
+		<td> 8520001000 </td>
+		<td> 29-FEB-2012 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		<td> Some Address in Bangalore, PIN-560038 </td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
